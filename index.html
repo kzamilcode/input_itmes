@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xl-8 col-md-12 bg-primary">
+          <div class="row">
+            <div class="col-xl-6 bg-success">
+              <form>
+                <label for="exampleInputEmail1" class="form-label"
+                  >Full Name</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">text-input</div>
+              </form>
+            </div>
+            <div class="col-xl-6 bg-warning">
+              <div class="btn btn_common">
+                <i class="fas fa-search"></i>
+              </div>
+              <input type="text" class="input" placeholder="search..." />
+
+              <div id="emailHelp" class="form-text">search field</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 bg-info">
+              <label for="start">Date:</label>
+
+              <input
+                type="date"
+                id="start"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+              <i class="fas fa-calendar-day"></i>
+              <div id="emailHelp">date</div>
+            </div>
+            <div class="col-xl-6">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Nationality</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>bangladesh</option>
+                  <option>india</option>
+                  <option>australiya</option>
+                  <option>england</option>
+                  <option>japan</option>
+                </select>
+                <div id="emailHelp">selection input</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 col-md-12 bg-dark">
+          <div class="form-group">
+            <label for="comment">Description</label>
+            <textarea
+              class="form-control"
+              rows="3"
+              id="comment"
+              placeholder="type hear"
+            ></textarea>
+          </div>
+        </div>
+       <div class="col-xl-8 col-lg-12 bg-danger">
+        <div class="row">
+            <div class="col-xl-6">6</div>
+            <div class="col-xl-6 bg-success">7</div>
+            <div class="col-xl-6 bg-dark">6</div>
+            <div class="col-xl-6 bg-warning">7</div>
+        </div>
+   
+       </div>
+       <div class="col-xl-4  col-lg-12 ">
+           <div class="row">
+               <div class="col-xl-12">7</div>
+               <div class="col-xl-12 bg-info">8</div>
+           </div>
+       </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
