@@ -4,7 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <!--font-awasome-->
+    <script
+      src="https://kit.fontawesome.com/9482a7a9ac.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
@@ -18,26 +22,37 @@
         <div class="col-lg-8 col-xl-8 col-md-12 bg-primary">
           <div class="row">
             <div class="col-xl-6 bg-success">
-              <form>
-                <label for="exampleInputEmail1" class="form-label"
+              <div class="box text-white">
+                <label for="exampleInputText" class="form-label"
                   >Full Name</label
                 >
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
+                  id="exampleInputText"
+                  aria-describedby="TextHelp"
                 />
-                <div id="emailHelp" class="form-text">text-input</div>
-              </form>
+                <div id="textHelp" class="form-text text-center text-white">
+                  text-input
+                </div>
+              </div>
             </div>
             <div class="col-xl-6 bg-warning">
-              <div class="btn btn_common">
-                <i class="fas fa-search"></i>
+              <div class="box">
+                <div class="wrapper">
+                  <div class="search-box">
+                    <div class="search-btn"><i class="fas fa-search"></i></div>
+                    <input
+                      type="text"
+                      class="input-search"
+                      placeholder="search"
+                    />
+                  </div>
+                </div>
+                <div id="textHelp" class="form-text text-center text-white">
+                  search-field
+                </div>
               </div>
-              <input type="text" class="input" placeholder="search..." />
-
-              <div id="emailHelp" class="form-text">search field</div>
             </div>
           </div>
           <div class="row">
@@ -71,7 +86,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-xl-4 col-md-12 bg-dark">
-          <div class="form-group">
+          <div class="box">
             <label for="comment">Description</label>
             <textarea
               class="form-control"
@@ -96,9 +111,8 @@
           </div>
         </div>
       </div>
-      
     </div>
-    <p>antu</p>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>

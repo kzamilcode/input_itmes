@@ -1,0 +1,35 @@
+.search-box {
+  position: relative;
+  display: flex;
+}
+.search-box .search-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box .input-search {
+  outline: none;
+  width: 350px;
+  border-left-style: none;
+  border: none;
+  background: none;
+}
+.search-box {
+  position: relative;
+  display: flex;
+  border: 1px solid;
+  border-radius: 7px;
+}
+.wrapper {
+  background: #fff;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+#comment {
+  margin-top: 0.5rem;
+}
+.box {
+  padding: 1rem 0;
+}
