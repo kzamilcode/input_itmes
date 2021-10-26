@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+label {
+  color: rgba(0, 0, 0, 0.651);
+}
 .search-box {
   position: relative;
   display: flex;
@@ -19,8 +27,11 @@
 .search-box {
   position: relative;
   display: flex;
-  border: 1px solid;
+  border: 1px solid #0000002e;
   border-radius: 7px;
+}
+.fas.fa-search {
+  color: #00000052;
 }
 .wrapper {
   background: #fff;
@@ -63,4 +74,16 @@
   padding: 0.4rem;
   width: 100%;
   border-radius: 5px;
+  border: 1px solid #0003;
+  color: #0000008a;
+}
+.fa.fa-calendar {
+  color: #0000ffb5;
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  padding: 80px 0;
 }
