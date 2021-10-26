@@ -19,7 +19,6 @@ label {
 }
 .search-box .input-search {
   outline: none;
-  width: 350px;
   border-left-style: none;
   border: none;
   background: none;
@@ -32,6 +31,7 @@ label {
 }
 .fas.fa-search {
   color: #00000052;
+  margin-left: 0.5rem;
 }
 .wrapper {
   background: #fff;
