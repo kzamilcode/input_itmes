@@ -27,9 +27,40 @@
   margin-top: 2rem;
   border-radius: 8px;
 }
+.form-label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
 #comment {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
+  height: 10rem;
 }
 .box {
   padding: 1rem 0;
+}
+
+.input-group-text {
+  border-radius: 0;
+  height: 53px;
+  border-left-style: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.date .form-control {
+  border-right-style: none;
+}
+.date .form-control:focus {
+  box-shadow: none;
+}
+#country:hover {
+  background: white;
+  outline: none;
+  box-shadow: none;
+}
+#country {
+  background: white;
+  border: 0;
+  padding: 0.4rem;
+  width: 100%;
+  border-radius: 5px;
 }

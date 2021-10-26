@@ -11,8 +11,31 @@
     ></script>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/9482a7a9ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="css/style.css" rel="stylesheet" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!--date-->
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script> -->
+    <!--date-->
     <title>Hello, world!</title>
   </head>
 
@@ -57,21 +80,27 @@
           </div>
           <div class="row">
             <div class="col-xl-6 bg-info">
-              <label for="start">Date:</label>
-
-              <input
-                type="date"
-                id="start"
-                name="trip-start"
-                value="2018-07-22"
-                min="2018-01-01"
-                max="2018-12-31"
-              />
-              <i class="fas fa-calendar-day"></i>
-              <div id="emailHelp">date</div>
+              <div class="box text-white">
+                <label for="exampleInputText" class="form-label">Date</label>
+                <div class="input-group date" id="datepicker">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="mm-dd-yy"
+                  />
+                  <span class="input-group-append">
+                    <span class="input-group-text bg-white">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                  </span>
+                </div>
+                <div id="textHelp" class="form-text text-center text-white">
+                  Date
+                </div>
+              </div>
             </div>
             <div class="col-xl-6">
-              <div class="form-group">
+            
                 <label for="exampleFormControlSelect1">Nationality</label>
                 <select class="form-control" id="exampleFormControlSelect1">
                   <option>bangladesh</option>
@@ -80,7 +109,23 @@
                   <option>england</option>
                   <option>japan</option>
                 </select>
+
                 <div id="emailHelp">selection input</div>
+              </div> -->
+              <div class="box text-white">
+                <label for="exampleInputText" class="form-label"
+                  >Nationality</label
+                >
+                <select id="country">
+                  <option value="country">Select Country</option>
+                  <option value="australiya">Australiya</option>
+                  <option value="india">India</option>
+                  <option value="usa">USA</option>
+                </select>
+
+                <div id="textHelp" class="form-text text-center text-white">
+                  Selection Input
+                </div>
               </div>
             </div>
           </div>
@@ -115,6 +160,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>
