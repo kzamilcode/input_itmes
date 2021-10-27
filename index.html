@@ -22,9 +22,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!--telephon-input -css-cdn-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.5/css/intlTelInput.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <!--multiple-input -css-cdn-->
+    <link rel="stylesheet" href="./css/chosen.min.css" />
+    <script src="./js/chosen.jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <title>Hello, world!</title>
   </head>
-
   <body>
     <div class="container">
       <div class="row">
@@ -115,18 +124,92 @@
             ></textarea>
           </div>
         </div>
-        <div class="col-xl-8 col-lg-12 bg-danger">
+        <div class="col-xl-12 col-lg-12">
           <div class="row">
-            <div class="col-xl-6">6</div>
-            <div class="col-xl-6 bg-success">7</div>
-            <div class="col-xl-6 bg-dark">6</div>
-            <div class="col-xl-6 bg-warning">7</div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-12">
-          <div class="row">
-            <div class="col-xl-12">7</div>
-            <div class="col-xl-12 bg-info">8</div>
+            <div class="col-xl-4 col-md-4 border">
+              <div class="box">
+                <label for="comment">Phone</label>
+                <input id="phone" name="phone" type="tel" />
+                <div id="textHelp" class="form-text text-center">
+                  Phone number
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 border">
+              <div class="box">
+                <label for="comment">Sent to</label>
+                <select multiple class="sel">
+                  <option>Barishal</option>
+                  <option>Dhaka</option>
+                  <option>Shylet</option>
+                  <option>Khulna</option>
+                </select>
+                <div id="textHelp" class="form-text text-center">
+                  Multi select-input
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 border">
+              <label for="comment" class="antu">Quantity</label>
+              <div class="containerr">
+                <div class="div">
+                  <span class="next" onclick="nextNum()"></span>
+                </div>
+                <div class="divv">
+                  <span class="prev" onclick="prevNum()"></span>
+                </div>
+
+                <div id="box">
+                  <span>0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 border">
+              <div class="box">
+                <label for="start">password</label>
+
+                <div class="wapper">
+                  <input type="password" placeholder="password" id="password" />
+                  <span
+                    ><i class="far fa-eye" id="eye " onclick="toggle()"></i>
+                  </span>
+                </div>
+                <div id="textHelp" class="form-text text-center">Password</div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 border">
+              <div class="box">
+                <label for="start">Credit card</label>
+                <div class="waapper">
+                  <input
+                    type="text"
+                    id="cn"
+                    name="cn"
+                    class="w3-input w3-border w3-round"
+                    placeholder="---- ---- ---- ----"
+                  />
+                  <span><i class="fab fa-cc-visa"></i></span>
+                </div>
+
+                <div id="textHelp" class="form-text text-center">
+                  Number only input
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 border">
+              <div class="box">
+                <label for="exampleColorInput" class="form-label new"
+                  >Color picker</label
+                >
+                <input
+                  type="color"
+                  class="form-control form-control-color"
+                  id="exampleColorInput"
+                  value="#563d7c"
+                  title="Choose your color"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -134,6 +217,10 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!--telephon-input-js-cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.5/js/intlTelInput.min.js"></script>
+    <!--Credit Card-input-js-cdn-->
+    <script src="  https://cdn.jsdelivr.net/npm/payform@1.4.0/dist/payform.min.js"></script>
 
     <script src="js/main.js"></script>
   </body>
