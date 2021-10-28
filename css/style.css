@@ -30,10 +30,7 @@
 label {
   color: rgba(0, 0, 0, 0.651);
 }
-/* .search-box {
-  position: relative;
-  display: flex;
-} */
+
 .search-box .search-btn {
   width: 40px;
   height: 50px;
@@ -141,7 +138,9 @@ label {
   background: none !important;
   border-right: 1px solid #0000004a;
 }
+
 .iti__selected-flag {
+  background: none !important;
   padding: 0 6px 0 25px !important;
 }
 .iti--allow-dropdown .iti__flag-container,
