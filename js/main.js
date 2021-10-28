@@ -16,7 +16,7 @@ window.intlTelInput(input, {
   
     //   placeholderNumberType: "MOBILE",
     //   preferredCountries: ['cn', 'jp'],                     
-      separateDialCode: true,
+    //   separateDialCode: true,
     utilsScript: "../js/utils.js",
 })
 

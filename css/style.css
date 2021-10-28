@@ -3,15 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+#exampleInputText {
+  border: 1px solid #0000003d;
+}
+.form-label.m {
+  width: 78%;
+  margin: auto;
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1000px !important;
+}
+.form-control {
+  width: 80% !important;
+  margin: auto !important;
+  height: 51px;
+}
+.form-control:focus {
+  border-color: #878a8e70;
+  outline: 0;
+  box-shadow: none !important;
+}
 label {
   color: rgba(0, 0, 0, 0.651);
 }
-.search-box {
+/* .search-box {
   position: relative;
   display: flex;
-}
+} */
 .search-box .search-btn {
-  width: 50px;
+  width: 40px;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -23,11 +47,17 @@ label {
   border: none;
   background: none;
 }
+.input-search {
+  width: 100%;
+  text-align: left !important;
+}
 .search-box {
   position: relative;
   display: flex;
   border: 1px solid #0000002e;
   border-radius: 7px;
+  width: 80%;
+  margin: 0 auto;
 }
 .fas.fa-search {
   color: #00000052;
@@ -35,7 +65,7 @@ label {
 }
 .wrapper {
   background: #fff;
-  margin-top: 2rem;
+  margin-top: 1.4rem;
   border-radius: 8px;
 }
 .form-label {
@@ -56,6 +86,15 @@ label {
   border-left-style: none;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+  border: none !important;
+}
+.input-group {
+  width: 80% !important;
+  margin: auto;
+  flex-wrap: unset;
+  border: 1px solid #00000042;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .date .form-control {
   border-right-style: none;
@@ -71,13 +110,15 @@ label {
 #country {
   background: white;
   border: 0;
-  padding: 0.4rem;
-  width: 100%;
+  padding: 0.5rem;
+  width: 80%;
   border-radius: 5px;
   border: 1px solid #0003;
   color: #0000008a;
+
+  margin-left: 1.5rem;
 }
-.fa.fa-calendar {
+.fa.fa-calendar:hover {
   color: #0000ffb5;
 }
 .container,
@@ -90,15 +131,29 @@ label {
 
 /*telephon-number-input-style*/
 #phone {
-  width: 100%;
-  padding: 0.4rem 0;
+  width: 80%;
   border-radius: 5px;
   border: 1px solid #0000003d;
+  height: 2.4rem;
+  margin-left: 1.5rem;
 }
 .iti--separate-dial-code .iti__selected-flag {
   background: none !important;
   border-right: 1px solid #0000004a;
 }
+.iti__selected-flag {
+  padding: 0 6px 0 25px !important;
+}
+.iti--allow-dropdown .iti__flag-container,
+.iti--separate-dial-code .iti__flag-container {
+  right: auto;
+  left: 15px !important;
+}
+.iti__arrow,
+.iti__arrow--up {
+  width: 8px !important;
+}
+
 /*password-input-style*/
 .wapper {
   line-height: 48px;
@@ -107,30 +162,56 @@ label {
 .far.fa-eye {
   position: absolute;
   top: 30%;
-  left: 85%;
+  left: 80%;
   cursor: pointer;
 }
 .far.fa-eye:hover {
   color: blue;
 }
 #password {
-  width: 100%;
+  width: 80%;
   border-radius: 5px;
   border: 1px solid #00000054;
+  margin-left: 1.5rem;
+  height: 54px;
 }
 /*multiple-input-style*/
 .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
   background: url(../img/chosen-sprite.png) -42px 1px no-repeat !important;
 }
+.chosen-container-active .chosen-choices {
+  border: 1px solid rgba(0, 0, 0, 0.335) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
 .chosen-container-multi .chosen-choices {
   padding: 10px !important;
   border-radius: 5px;
   background-image: none !important;
+  width: 80% !important;
+  margin: auto !important;
+  border: 1px solid #aaaaaab3 !important;
+}
+.search-field {
+  font-size: 0.8rem;
+  width: 100%;
 }
 .chosen-container.chosen-container-multi {
   width: 100% !important;
 }
-
+.chosen-container-multi .chosen-choices li.search-choice {
+  margin: 0 !important;
+  padding: 6px 20px 3px 5px !important;
+  border: none !important;
+  background: #d3d7e9 !important;
+  color: #4540ec !important;
+  padding-bottom: 8px !important;
+  font-size: 0.7rem !important;
+  margin-right: 5px !important;
+}
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  top: 8px !important;
+}
 /*stepper*/
 .containerr {
   border: 1px solid #00000059 !important;
@@ -156,35 +237,25 @@ label {
 }
 .containerr .next {
   position: absolute;
-  top: 65%;
+  top: 30%;
   right: 13px;
   display: block;
-  width: 12px;
-  height: 12px;
-  border-top: 3px solid #161616;
-  border-left: 3px solid #0c0c0c;
+
   z-index: 1;
-  transform: translateY(-50%) rotate(44deg);
 }
 .containerr .next:hover {
-  border-top: 3px solid blue;
-  border-left: 3px solid blue;
+  color: blue;
 }
 .containerr .prev:hover {
-  border-top: 3px solid blue;
-  border-left: 3px solid blue;
+  color: blue;
 }
 .prev {
   position: absolute;
-  top: -7%;
+
   right: 13px;
   display: block;
-  width: 12px;
-  height: 12px;
-  border-top: 3px solid #1a1818;
-  border-left: 3px solid #2a2727;
+
   z-index: 1;
-  transform: translatey(50%) rotate(-134deg);
 }
 .divv {
   position: absolute;
@@ -211,12 +282,11 @@ label {
 }
 .antu {
   display: block;
-
   margin-top: 1rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 /*credit-card*/
-.waapper {
+/* .waapper {
   position: relative;
 }
 .fab.fa-cc-visa {
@@ -235,5 +305,143 @@ label {
   margin: 0 auto;
 }
 .form-label.new {
-  margin-left: 4rem;
+  margin-left: 1.4rem;
+} */
+.form-label.m.a {
+  margin-top: 1rem !important;
+}
+checkout_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 380px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid #9e9e9e;
+  border: 0;
+  text-align: center;
+}
+
+.card_number .input {
+  width: 80%;
+  text-align: left;
+  border: 1px solid #0000004f;
+  margin-left: 1.5rem;
+  height: 2.4rem;
+}
+
+#card-container {
+  position: relative;
+  width: 100%;
+}
+
+#logo {
+  width: 45px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 37px;
+}
+.form-label.new {
+  margin-left: 1.4rem;
+}
+.visa {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 0 no-repeat;
+}
+.mastercard {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -30px no-repeat;
+}
+.amex {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -60px no-repeat;
+}
+.diners {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -90px no-repeat;
+}
+.discover {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -120px no-repeat;
+}
+.shopping {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -150px no-repeat;
+}
+.naranja {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -180px no-repeat;
+}
+.qida {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -210px no-repeat;
+}
+.clubdia {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -240px no-repeat;
+}
+.musicred {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -270px no-repeat;
+}
+.nevada {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -300px no-repeat;
+}
+.tuya {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -330px no-repeat;
+}
+.laanonima {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -360px no-repeat;
+}
+.crediguia {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -390px no-repeat;
+}
+.patagonia {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -410px no-repeat;
+}
+.sol {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -440px no-repeat;
+}
+.cabal {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -470px no-repeat;
+}
+.cencosud {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -500px no-repeat;
+}
+.credimas {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -530px no-repeat;
+}
+.carrefour {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -560px no-repeat;
+}
+.grupar {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -590px no-repeat;
+}
+.wishgift {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -610px no-repeat;
+}
+.unknown {
+  background: url("https://jscardvalidator-mpccmwdwqf.now.sh/cards_sprite_compressed_30.jpg")
+    0 -640px no-repeat;
 }

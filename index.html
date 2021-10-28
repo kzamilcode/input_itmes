@@ -41,7 +41,7 @@
           <div class="row">
             <div class="col-xl-6 col-lg-6 border">
               <div class="box text-white">
-                <label for="exampleInputText" class="form-label"
+                <label for="exampleInputText" class="form-label m"
                   >Full Name</label
                 >
                 <input
@@ -50,7 +50,7 @@
                   id="exampleInputText"
                   aria-describedby="TextHelp"
                 />
-                <div id="textHelp" class="form-text text-center text-white">
+                <div id="textHelp" class="form-text text-center">
                   text-input
                 </div>
               </div>
@@ -67,7 +67,7 @@
                     />
                   </div>
                 </div>
-                <div id="textHelp" class="form-text text-center text-white">
+                <div id="textHelp" class="form-text text-center">
                   search-field
                 </div>
               </div>
@@ -76,7 +76,7 @@
           <div class="row">
             <div class="col-xl-6 col-lg-6 border">
               <div class="box text-white">
-                <label for="exampleInputText" class="form-label">Date</label>
+                <label for="exampleInputText" class="form-label m">Date</label>
                 <div class="input-group date" id="datepicker">
                   <input
                     type="text"
@@ -89,14 +89,12 @@
                     </span>
                   </span>
                 </div>
-                <div id="textHelp" class="form-text text-center text-white">
-                  Date
-                </div>
+                <div id="textHelp" class="form-text text-center">Date</div>
               </div>
             </div>
             <div class="col-xl-6 col-lg-6 border">
               <div class="box text-white">
-                <label for="exampleInputText" class="form-label"
+                <label for="exampleInputText" class="form-label m"
                   >Nationality</label
                 >
                 <select id="country">
@@ -115,7 +113,7 @@
         </div>
         <div class="col-lg-4 col-xl-4 col-md-12 border">
           <div class="box">
-            <label for="comment">Description</label>
+            <label for="comment" class="form-label m">Description</label>
             <textarea
               class="form-control"
               rows="3"
@@ -128,7 +126,7 @@
           <div class="row">
             <div class="col-xl-4 col-md-4 border">
               <div class="box">
-                <label for="comment">Phone</label>
+                <label for="comment" class="form-label m">Phone</label>
                 <input id="phone" name="phone" type="tel" />
                 <div id="textHelp" class="form-text text-center">
                   Phone number
@@ -137,7 +135,7 @@
             </div>
             <div class="col-xl-4 col-md-4 border">
               <div class="box">
-                <label for="comment">Sent to</label>
+                <label for="comment" class="form-label m">Sent to</label>
                 <select multiple class="sel">
                   <option>Barishal</option>
                   <option>Dhaka</option>
@@ -152,11 +150,12 @@
             <div class="col-xl-4 col-md-4 border">
               <label for="comment" class="antu">Quantity</label>
               <div class="containerr">
-                <div class="div">
-                  <span class="next" onclick="nextNum()"></span>
+                <div class="div" onclick="nextNum()"">
+                  <i class="fas fa-sort-up next"></i>
                 </div>
-                <div class="divv">
-                  <span class="prev" onclick="prevNum()"></span>
+                <div class="divv" onclick="prevNum()">
+               
+                  <i class="fas fa-sort-down prev" ></i>
                 </div>
 
                 <div id="box">
@@ -166,10 +165,10 @@
             </div>
             <div class="col-xl-4 col-md-4 border">
               <div class="box">
-                <label for="start">password</label>
+                <label for="start" class="form-label m">password</label>
 
                 <div class="wapper">
-                  <input type="password" placeholder="password" id="password" />
+                  <input type="password" placeholder="  password" id="password" />
                   <span
                     ><i class="far fa-eye" id="eye " onclick="toggle()"></i>
                   </span>
@@ -178,23 +177,23 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-4 border">
-              <div class="box">
-                <label for="start">Credit card</label>
-                <div class="waapper">
-                  <input
-                    type="text"
-                    id="cn"
-                    name="cn"
-                    class="w3-input w3-border w3-round"
-                    placeholder="---- ---- ---- ----"
-                  />
-                  <span><i class="fab fa-cc-visa"></i></span>
-                </div>
-
-                <div id="textHelp" class="form-text text-center">
+            
+                
+              <label for="start" class="form-label m a">Credit card</label>
+              <div class="checkout_form">
+              <div class="card_number" id="card-container">
+                <input
+                  type="text"
+                  class="input"
+                  id="card"
+                  placeholder="0000 0000 0000 0000"
+                />
+                <div id="logo"></div>
+              </div>
+              </div>
+               <div id="textHelp" class="form-text text-center">
                   Number only input
                 </div>
-              </div>
             </div>
             <div class="col-xl-4 col-md-4 border">
               <div class="box">
@@ -220,8 +219,9 @@
     <!--telephon-input-js-cdn-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.5/js/intlTelInput.min.js"></script>
     <!--Credit Card-input-js-cdn-->
-    <script src="  https://cdn.jsdelivr.net/npm/payform@1.4.0/dist/payform.min.js"></script>
-
+    <!-- <script src="  https://cdn.jsdelivr.net/npm/payform@1.4.0/dist/payform.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="./js/card-validator.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
